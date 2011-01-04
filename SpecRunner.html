@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="lib/jasmine-1.0.1/jasmine.css">
   <script type="text/javascript" src="lib/jasmine-1.0.1/jasmine.js"></script>
   <script type="text/javascript" src="lib/jasmine-1.0.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="javalib/jasmine.console_reporter.js"></script>
 
   <!-- include source files here... -->
   <script type="text/javascript" src="src/Player.js"></script>
@@ -24,6 +25,7 @@
 
 <script type="text/javascript">
   jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+  jasmine.getEnv().addReporter(new jasmine.ConsoleReporter());
   jasmine.getEnv().execute();
 </script>
 
