@@ -1,0 +1,29 @@
+
+JEditable contains something which isn't quite a bug but isn't quite right either; this breaks edit-in-place if you click between different EiP-enabled controls. If you update the version of JEditable on this site, please apply the patch below to the new code before deploying.
+
+==============================================================================================
+
+1. Add the following withing the root (function($){}) block (near line 60, after comments):
+
+var currentEditor = null;
+
+
+
+2. Add the following code within the bound settings.event callback function (near line 127), as the first peice of code:
+
+if(currentEditor != null && currentEditor != this)
+{
+	currentEditor = null;
+	return;
+}
+currentEditor = this;
+
+
+3. Add the following at the start of the form.submit() function (near line 306)
+
+currentEditor = null;
+
+
+Don't forget to minify!
+
+Thankyou!
