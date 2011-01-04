@@ -12,6 +12,6 @@ describe("Game", function() {
 
         var score = game.score;
 
-        expect(score).toEqual(0);
+        expect(score).toEqual(6);
   });
 });

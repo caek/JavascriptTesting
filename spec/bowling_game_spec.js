@@ -1,4 +1,4 @@
-describe("game", function() {
+describe("Bowling Game", function() {
   var game;
 
   beforeEach(function() {
@@ -10,6 +10,6 @@ describe("game", function() {
           game.pub_roll(0);
       }
 
-    expect(game.pub_score).toEqual(1);
+    expect(game.pub_score).toEqual(0);
   });
 });
