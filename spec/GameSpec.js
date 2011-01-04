@@ -7,7 +7,7 @@ describe("Game", function() {
 
   it("should score zero if no pins are knocked down at all in game", function() {
         for(i=0; i<20; i++){
-            game.roll(1);
+            game.roll(0);
         }
 
         var score = game.score;
