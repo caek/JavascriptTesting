@@ -1,0 +1,14 @@
+Javascript Testing with Jasmine
+===============================
+
+This project consists of some example Jasmine Javascript tests.
+
+The tests are compiled and run using Maven, with the following Jasmine-Maven-plugin:
+https://github.com/searls/jasmine-maven-plugin
+
+The plugin requires the Maven jasmine-archetype:
+https://github.com/searls/jasmine-archetype
+
+If the archetype is not installed, download the project files from the above link,
+then follow these instructions to create and install it (should be very straightforward):
+ http://maven.apache.org/archetype/maven-archetype-plugin/advanced-usage.html
