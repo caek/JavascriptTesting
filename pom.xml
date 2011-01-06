@@ -41,6 +41,23 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo.jslint</groupId>
+                <artifactId>jslint-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>main-jslint</goal>
+                            <goal>test-jslint</goal>
+                        </goals>
+                        <configuration>
+                            <sourceJsFolder>./src/js</sourceJsFolder>
+                            <failOnIssues>false</failOnIssues>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
