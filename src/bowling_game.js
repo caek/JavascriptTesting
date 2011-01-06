@@ -1,6 +1,6 @@
-$(document).ready(function () {
-	$("input").click(BowlingGame.pub_roll);	
-});
+//$(document).ready(function () {
+//	$("input").click(BowlingGame.pub_roll);
+//});
 
 var BowlingGame = function(){
 	var total_score = 0;
@@ -80,7 +80,8 @@ var BowlingGame = function(){
             priv.score();
 		},
         pub_score : function(){
-            return priv.score();
+            return 0;
+//            return priv.score();
         }
 	};
 }();
